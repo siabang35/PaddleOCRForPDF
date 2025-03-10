@@ -1,35 +1,23 @@
-# Gunakan Python 3.10 (bukan 3.12)
-FROM python:3.10
+# Gunakan image Python yang kompatibel
+FROM python:3.12-slim
 
-# Set environment variables
-ENV PYTHONUNBUFFERED=1 \
-    PIP_NO_CACHE_DIR=off \
-    PIP_DISABLE_PIP_VERSION_CHECK=on \
-    PIP_DEFAULT_TIMEOUT=100
-
-# Set working directory
+# Set work directory
 WORKDIR /app
 
-# Install dependencies sistem yang diperlukan
-RUN apt-get update && apt-get install -y \
-    python3-distutils \
-    python3-venv \
-    libgl1-mesa-glx \
-    libglib2.0-0 \
-    poppler-utils \
-    && rm -rf /var/lib/apt/lists/*
+# Install dependensi yang hilang
+RUN apt-get update && apt-get install -y python3-distutils
 
-# Copy semua file ke dalam container
-COPY . .
+# Copy kode proyek
+COPY . /app
 
-# Buat virtual environment dan install dependensi
+# Buat virtual environment dan install dependencies
 RUN python -m venv /opt/venv && \
-    /opt/venv/bin/pip install --upgrade pip setuptools wheel && \
-    /opt/venv/bin/pip install -r requirements.txt
+    . /opt/venv/bin/activate && \
+    pip install --upgrade pip setuptools wheel && \
+    pip install -r requirements.txt
 
-# Gunakan user non-root untuk keamanan
-RUN useradd -m appuser && chown -R appuser /app
-USER appuser
+# Expose port untuk FastAPI
+EXPOSE 8000
 
-# Jalankan aplikasi dengan Uvicorn
-CMD ["/opt/venv/bin/uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Jalankan aplikasi
+CMD ["/opt/venv/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
