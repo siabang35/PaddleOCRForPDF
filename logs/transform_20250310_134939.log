@@ -1,0 +1,2 @@
+2025-03-10 13:49:49,005 - transform - INFO - Loaded models: SpaCy (en_core_web_sm), BERT (all-MiniLM-L6-v2)
+2025-03-10 13:49:49,017 - transform - ERROR - Transformation failed: [Errno 2] No such file or directory: 'C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\extracted_data.json'

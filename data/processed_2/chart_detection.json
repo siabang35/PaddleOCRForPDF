@@ -1,0 +1,92 @@
+[
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_1.png",
+        "contains_chart": "Yes",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": true
+        },
+        "confidence_score": 1.0
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_2.png",
+        "contains_chart": "No",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": false
+        },
+        "confidence_score": 0.6666666666666666
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_3.png",
+        "contains_chart": "No",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": false
+        },
+        "confidence_score": 0.6666666666666666
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_4.png",
+        "contains_chart": "Yes",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": true
+        },
+        "confidence_score": 1.0
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_5.png",
+        "contains_chart": "Yes",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": true
+        },
+        "confidence_score": 1.0
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_6.png",
+        "contains_chart": "Yes",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": true
+        },
+        "confidence_score": 1.0
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_7.png",
+        "contains_chart": "Yes",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": true
+        },
+        "confidence_score": 1.0
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_8.png",
+        "contains_chart": "No",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": false
+        },
+        "confidence_score": 0.6666666666666666
+    },
+    {
+        "image": "C:\\Users\\wilda\\OneDrive\\Documents\\studycase_vidavox\\data\\processed\\page_9.png",
+        "contains_chart": "Yes",
+        "characteristics": {
+            "has_lines": true,
+            "has_shapes": true,
+            "regular_patterns": true
+        },
+        "confidence_score": 1.0
+    }
+]

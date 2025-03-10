@@ -1,0 +1,5 @@
+2025-03-10 13:54:46,603 - load - INFO - Database tables created/verified
+2025-03-10 13:54:46,603 - load - INFO - Database connection established
+2025-03-10 13:54:46,949 - load - INFO - Data loaded successfully. Document ID: 2
+2025-03-10 13:54:46,949 - load - INFO - Document loaded successfully with ID: 2
+2025-03-10 13:54:46,949 - load - INFO - Database connection closed

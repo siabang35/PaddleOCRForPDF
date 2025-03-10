@@ -1,0 +1,27 @@
+# ETL Dependencies
+pdf2image
+asyncpg
+paddleocr
+opencv-python
+PyMuPDF
+spacy
+sentence-transformers
+faiss-cpu
+numpy==1.25.0
+# Database
+psycopg2-binary
+python-dotenv
+torch==2.6.0
+torchvision==0.21.0
+# API
+fastapi
+uvicorn
+pydantic
+
+
+
+# Frontend
+streamlit
+pillow
+pandas
+requests
