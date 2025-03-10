@@ -1,4 +1,4 @@
-# Gunakan Python 3.10 yang lebih stabil
+# Gunakan Python 3.10 (bukan 3.12)
 FROM python:3.10
 
 # Set environment variables
@@ -10,7 +10,7 @@ ENV PYTHONUNBUFFERED=1 \
 # Set working directory
 WORKDIR /app
 
-# Install dependencies sistem yang dibutuhkan (jika ada)
+# Install dependencies sistem yang diperlukan
 RUN apt-get update && apt-get install -y \
     python3-distutils \
     python3-venv \
@@ -22,11 +22,10 @@ RUN apt-get update && apt-get install -y \
 # Copy semua file ke dalam container
 COPY . .
 
-# Buat virtual environment dan install dependencies
-RUN python3 -m venv /opt/venv && \
-    . /opt/venv/bin/activate && \
-    pip install --upgrade pip setuptools wheel && \
-    pip install -r requirements.txt
+# Buat virtual environment dan install dependensi
+RUN python -m venv /opt/venv && \
+    /opt/venv/bin/pip install --upgrade pip setuptools wheel && \
+    /opt/venv/bin/pip install -r requirements.txt
 
 # Gunakan user non-root untuk keamanan
 RUN useradd -m appuser && chown -R appuser /app
