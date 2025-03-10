@@ -20,4 +20,4 @@ RUN python -m venv /opt/venv && \
 EXPOSE 8000
 
 # Jalankan aplikasi
-CMD ["/opt/venv/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["/opt/venv/bin/uvicorn", "backend.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
