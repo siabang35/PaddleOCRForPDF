@@ -1,4 +1,5 @@
-# ETL Dependencies
+setuptools>=65.5.0
+wheel
 pdf2image
 asyncpg
 paddleocr
