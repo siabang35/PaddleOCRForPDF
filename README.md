@@ -59,7 +59,7 @@ DATABASE_URL=your_supabasedb
 
 5. Initialize the database:
 ```bash
-psql -U postgres -f database/init.sql
+psql -U postgres -f database/db.sql
 ```
 
 ## 🏃‍♂️ Running the Pipeline
