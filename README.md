@@ -39,7 +39,8 @@ cd research-paper-etl
 2. Create and activate a virtual environment:
 ```bash
 python -m venv env
-source env/bin/activate  # On Windows: env\Scripts\activate
+source env/bin/activate #On Linux:
+env\Scripts\activate #On Windows:  
 ```
 
 3. Install dependencies:
@@ -100,14 +101,15 @@ research-paper-etl/
 ├── pipeline/           # ETL pipeline components
 │   ├── extract.py      # Text and chart extraction
 │   ├── transform.py    # Data processing
-│   └── load.py         # Database loading
+│   └── load.py         # Database loading         └── config.py
+    └── logger.py
 ├── frontend/           # Streamlit frontend
 │   └── app.py         # UI implementation
 ├── data/              # Data storage
 │   ├── input/         # Input PDFs
 │   └── processed/     # Processed data
 ├── database/          # Database scripts
-│   └── init.sql       # Database initialization
+│   └── db.sql       # Database initialization
 └── requirements.txt   # Python dependencies
 ```
 
