@@ -32,9 +32,9 @@ A comprehensive ETL (Extract, Transform, Load) pipeline for processing research 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/siabang35/PaddleOCRForPDF.git
 mkdir research-paper-etl
 cd research-paper-etl
+git clone https://github.com/siabang35/PaddleOCRForPDF.git
 ```
 
 2. Create and activate a virtual environment:
