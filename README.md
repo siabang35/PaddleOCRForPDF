@@ -102,8 +102,9 @@ research-paper-etl/
 ├── pipeline/           # ETL pipeline components
 │   ├── extract.py      # Text and chart extraction
 │   ├── transform.py    # Data processing
-│   └── load.py         # Database loading         └── config.py
+│   └── load.py         # Database loading     
     └── logger.py
+    └── config.py
 ├── frontend/           # Streamlit frontend
 │   └── app.py         # UI implementation
 ├── data/              # Data storage
